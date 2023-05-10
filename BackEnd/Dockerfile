@@ -1,6 +1,6 @@
-FROM amazoncorretto:17-alpine-jdk
+FROM amazoncorretto:17
 MAINTAINER Jere
-COPY target/proyect-0.0.1-SNAPSHOT.jar back-app.jar
-ENTRYPOINT  ["java","-jar","/back-app.jar"]
+COPY target/proyect-0.0.1-SNAPSHOT.jar proyect-0.0.1-SNAPSHOT.jar
+ENTRYPOINT  ["java","-jar","/proyect-0.0.1-SNAPSHOT.jar"]
 
 EXPOSE 8080
