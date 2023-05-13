@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
+@CrossOrigin(origins = "https://porfolioarg.web.app")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -43,6 +43,9 @@ public class AuthController {
     RolService rolService;
     @Autowired
     JwtProvider jwtProvider;
+    
+    
+    
     
     @PostMapping("/nuevo")
     public ResponseEntity<?> nuevo(@Valid @RequestBody NuevoUsuario nuevoUsuario, BindingResult bindingResult){
