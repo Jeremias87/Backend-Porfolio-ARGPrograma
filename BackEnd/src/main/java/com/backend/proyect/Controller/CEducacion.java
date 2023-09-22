@@ -1,4 +1,4 @@
-
+package com.backend.proyect.Controller;
 
 import com.backend.proyect.Dto.dtoEducacion;
 import com.backend.proyect.Entity.Educacion;
